@@ -1,2 +1,2 @@
 # openvent
-Open source non-invasive ventilator?
+A few scattered thoughts on an open source non-invasive ventilator.
