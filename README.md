@@ -94,6 +94,8 @@ that can alter the gasometer pressure.
 
 Water traps of sufficient capacity must be added in line with
 the insp and exp circuits.  These should also be mounted low.
+The tubing leading to/from gasometer and PEEP bottle must rise 1m
+vertically before going to their traps.
 
 An alarm must be added.  This is preferably a magnetic reed switch,
 inductive
@@ -105,6 +107,7 @@ various fault conditions:
 - lack of insp/exp cycling (for any reason)
 - alarm switch failure
 - alarm misadjusted
+- missed breath
 
 The code to implement the alarm basically resets a watchdog in
 the microcontroller
@@ -114,12 +117,15 @@ fixed at between 1 and 2 breath cycles.
 Insp/exp time should be set using rotary potentiometers, the position
 of which is read by the microcontroller each cycle.  Instead of
 showing the time on a display, the position of the knob on the
-potentiometer indicates clearly the time duration set.
+potentiometer will indicate clearly the time duration set.
 
 These two potentiometers are the only 2 electronic controls on
 the system.  In addition, weight on the gasometer controls insp
 pressure, and PEEP delivery tube insertion depth controls exp
 pressure.
+
+Gasometer weight may be replaced by constant tension springs (or
+their facsimile) in order to reduce reaction time.
 
 Mechanical potentiometers obviate the need for display software:
 less code means less code that can go wrong.  Probably only a couple
@@ -136,7 +142,8 @@ power bank, and this should be kept charged with a normal phone
 charger.  Even a small power bank (single 18650) should be enough
 to power the system for an hour if disconnected from the charger.
 Many power banks come with state-of-charge indicators, which may
-prove useful.  Mains power does not enter the system.  With a
+prove useful.  All of them have a charging indicator which will
+verify they are on charge.  Mains power does not enter the system.  With a
 portable oxygen bottle and castors on the ventilator base, the
 patient can be readily moved around with the ventilator.
 
@@ -257,5 +264,7 @@ Also periodically:
   compliance has reduced, under volume control plateau pressure would
   increase.  Under pressure control, tidal volume would decrease
   (plateau pressure not being meaningful here).
+1.  Check water traps especially if alarm sounds.  Any liquid present
+  may indicate coughing or breathing spasm or patient is fighting the vent.
 
 
