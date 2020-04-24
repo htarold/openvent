@@ -70,7 +70,7 @@ basic layout and operation is shown.
 
 I expect the weak points in the design to be the
 servo and the kink valve, but as of this writing the prototype
-has been running non-stop 8 days and counting without failure.
+has been running non-stop 18 days as of this writing without failure.
 
 ## Operationalising
 In order to make a useable model, some changes must be made.
