@@ -71,6 +71,7 @@ basic layout and operation is shown.
 I expect the weak points in the design to be the
 servo and the kink valve, but as of this writing the prototype
 has been running non-stop 18 days as of this writing without failure.
+**Edit** The system ran until July 1 and failed at the kink valve as expected.
 
 ## Operationalising
 In order to make a useable model, some changes must be made.
